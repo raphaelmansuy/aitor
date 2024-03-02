@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "aitor"
+version = "0.2"
+description = "An AI engineering toolbox. Tor stands for Torii, a Japanese gate, suggesting a gateway to AI. 🛐"
+authors = ["Raphael MANSUY <raphael.mansuy@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+huggingface-hub = "^0.20.3"
+numpy = "^1.26.4"
+click = "^8.1.7"
+
+[tool.poetry.scripts]
+aitor = "aitor.main:cli"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
